@@ -1,0 +1,179 @@
+// MEDIA MAX-WIDTH:1030px
+@media (max-width: 1030px) {
+  .shops {
+    &__item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+      margin-top: 0px;
+    }
+    &__img {
+      display: none;
+    }
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+}
+// MEDIA MAX-WIDTH:950px
+@media (max-width: 950px) {
+  .header {
+    &__top {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__logo {
+      margin-bottom: 10px;
+    }
+    &__logo-img {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+    }
+    &__logo-title {
+      font-size: 24px;
+    }
+    &__search {
+      margin-right: 20px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .company {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+// MEDIA MAX-WIDTH:770px
+@media (max-width: 770px) {
+  .header {
+    &__search {
+      margin: 0px 10px 10px 10px;
+    }
+    &__info-button {
+      margin-left: 14px;
+    }
+  }
+  .banner {
+    background-image: none;
+    text-align: center;
+    padding: 60px 40px;
+    &__title {
+      font-size: 40px;
+      margin: 0px 0px 30px 0px;
+    }
+    &__text {
+      max-width: none;
+    }
+  }
+  .shops {
+    padding: 40px 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .company {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    &__info {
+      flex-direction: column;
+    }
+    &__info-telephone {
+      margin: 15px 0px;
+    }
+    &__info-button {
+      margin: 0px;
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__bottom-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:570px
+@media (max-width: 570px) {
+  .menu {
+    &__item {
+      margin: 0px 10px 10px 10px;
+    }
+    &__link {
+      font-size: 13px;
+    }
+  }
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+    &__title {
+      padding-top: 0px;
+    }
+    &__menu {
+      padding-bottom: 0px;
+    }
+  }
+  .banner {
+    padding: 40px 15px;
+    &__title {
+      font-size: 34px;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  .catalog {
+    padding-bottom: 50px;
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .company {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+// MEDIA MAX-WIDTH:370px
+@media (max-width: 370px) {
+  .header {
+    &__search {
+      width: 250px;
+      margin-bottom: 15px;
+    }
+    &__info {
+      flex-direction: column;
+    }
+    &__info-button {
+      margin: 15px 0px 0px 0px;
+    }
+    &__bottom {
+      .menu__link {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+  .catalog__title {
+    font-size: 18px;
+  }
+  .shops {
+    &__grid {
+      padding: 20px 20px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+  .footer__info-address {
+    font-size: 14px;
+  }
+}
