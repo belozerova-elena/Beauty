@@ -1,0 +1,32 @@
+include ../info/info.pug
+
+- var navValues = ['Доставка', 'Оплата', 'Отзывы', 'Вопрос - ответ', 'Контакты'];
+- var menuValues = ['Парикмахерская', 'Барбершоп', 'Маникюр', 'Педикюр', 'Массаж', 'Мебель'];
+
+header.header
+  .container
+    nav.header__nav
+      ul.menu
+        each value in navValues
+          li.menu__item
+            a.menu__item-link(href='#') #{value}
+  .page-white
+    .header__top
+      .header__top-logo
+        .header__top-logo--img
+        .header__top-logo--title beauty
+      .header__top-search
+        img.header__top-search--img(src='assets/images/search.svg', alt='search')
+        input.header__top-search--input(type='search', name='search')
+      .header__top-info
+        +info-phone ([
+          { href: '88121234567', tel: '8 (812) 123-45-67' },
+        ])
+        +info-button('Обратный звонок')
+  .page-white
+    .header__bottom
+      .container
+        ul.menu
+          each value in menuValues
+            li.menu__item
+              a.menu__item-link(href='#') #{value}

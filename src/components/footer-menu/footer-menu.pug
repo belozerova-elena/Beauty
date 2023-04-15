@@ -1,0 +1,14 @@
+mixin footer-menu( footerMenuItems=[] )
+  - var footerMenuValues = ['Насадки', 'Инструменты', 'Гель-лаки', 'Дизайн', 'Наращивание', 'Оборудование'];
+
+  .footer-menu
+    each footerMenuItem in footerMenuItems
+      .footer-menu__item
+        h3.footer-menu__item-title
+          | Популярные
+          br
+          | категории
+        ul.footer-menu__list 
+          each value in footerMenuValues
+            li.footer-menu__list-item
+              a.footer-menu__list-item--link(href='#') #{value}

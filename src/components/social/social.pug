@@ -1,0 +1,14 @@
+mixin social ( socialItems=[] )
+  - var links = ['yt', 'vk', 'fb', 'in'];
+  ul.social
+    each socialItem in socialItems
+      li.social__item
+        -
+          var { link } = socialItem
+          var linkClass = links.includes(link) && `social__item-link--${link}`
+
+        a&attributes({
+          class: ['social__item-link', linkClass],
+          target: ['_blank'],
+          href: `${socialItem.href}`,
+        })

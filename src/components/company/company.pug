@@ -1,0 +1,6 @@
+mixin company( companyItems=[] )
+  .company
+    each companyItem in companyItems
+      .company__item
+        .company__item-img
+          img(src=`assets/images/${companyItem.src}.png`, alt=`${companyItem.alt}`)

@@ -1,0 +1,7 @@
+mixin product( productItems=[] )
+  each productItem in productItems
+    article.product 
+      img.product__img(src=`assets/images/${productItem.src}.png`, alt=`${productItem.alt}`)
+      h2.product__title #{productItem.title}
+      p.product__price #{productItem.price}
+      a.product__link(href='#') Купить

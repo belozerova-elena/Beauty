@@ -1,0 +1,20 @@
+.info-phone {
+  font-size: 16px;
+  text-decoration: none;
+  color: $black;
+}
+.info-button {
+  margin-left: 36px;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: $black;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid $pink;
+  transition: 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+}

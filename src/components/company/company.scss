@@ -1,0 +1,33 @@
+.company {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    cursor: pointer;
+  }
+  &__item-img {
+    box-sizing: border-box;
+    padding: 33px 0px;
+  }
+}
+// MEDIA MAX-WIDTH:950px
+@media (max-width: 950px) {
+  .company {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+// MEDIA MAX-WIDTH:770px
+@media (max-width: 770px) {
+  .company {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+// MEDIA MAX-WIDTH:570px
+@media (max-width: 570px) {
+  .company {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

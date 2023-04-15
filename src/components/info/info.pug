@@ -1,0 +1,6 @@
+mixin info-phone( infoPhoneItems=[] )
+  each infoPhoneItem in infoPhoneItems
+    a.info-phone(href=`tel:${infoPhoneItem.href}`) #{infoPhoneItem.tel}
+
+mixin info-button(button)
+  button.info-button(type='button') #{button}

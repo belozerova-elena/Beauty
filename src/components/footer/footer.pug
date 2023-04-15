@@ -1,0 +1,31 @@
+include ../footer-menu/footer-menu.pug 
+include ../social/social.pug 
+include ../info/info.pug
+
+footer.footer
+  .page-white
+    +footer-menu ([
+      {},
+      {},
+      {},
+      {},
+    ])
+  .page-white
+    .footer__top
+      .footer__top-social
+        +social ([
+          { link: 'yt', href: '#' },
+          { link: 'vk', href: '#' },
+          { link: 'fb', href: '#' },
+          { link: 'in', href: '#' },
+        ])
+      .footer__top-info 
+        address.footer__top-info--address 198555, Невский пр. 140, офис 140
+        p.footer__top-info--phone
+          +info-phone ([
+            { href: '88121234567', tel: '8 (812) 123-45-67' },
+          ])
+        +info-button('Обратный звонок')
+  .footer__bottom
+    p.footer__bottom-text Лучший магазин (с) 2023 Все права защищены. Интернет-магазин оборудования для салонов красоты
+    a.footer__bottom-link(href='#') Политика конфиденциальности

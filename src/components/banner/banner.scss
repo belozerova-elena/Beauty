@@ -1,0 +1,58 @@
+.banner {
+  box-sizing: border-box;
+  padding: 159px 0px 204px;
+  color: $white;
+  background-color: $pink;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &__title {
+    margin-bottom: 39px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__text {
+    max-width: 315px;
+    margin-bottom: 57px;
+    line-height: 1.5;
+  }
+  &__link {
+    padding: 9px 47px;
+    text-decoration: none;
+    color: $white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid $white;
+    transition: 0.4s ease;
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:770px
+@media (max-width: 770px) {
+  .banner {
+    padding: 60px 40px;
+    text-align: center;
+    background-image: none;
+    &__title {
+      margin: 0px 0px 30px 0px;
+      font-size: 40px;
+    }
+    &__text {
+      max-width: none;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:570px
+@media (max-width: 570px) {
+  .banner {
+    padding: 40px 15px;
+    &__title {
+      margin: 0px 0px 20px 0px;
+      font-size: 34px;
+    }
+  }
+}
