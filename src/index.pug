@@ -1,0 +1,40 @@
+extends base.pug
+include components/product/product.pug
+include components/company/company.pug
+
+block content
+  include components/header/header.pug 
+  include components/banner/banner.pug
+  section.catalog.container
+    h2.catalog__title Специальные предложения
+    .catalog__products 
+      +product([
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+      ])
+    include components/promo/promo.pug
+    +company([
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+      { src: 'impuls', alt: 'impuls' },
+    ])
+    h2.catalog__title Вы недавно смотрели
+    .catalog__products
+      +product([
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+        { src: 'chair', alt: 'Chair', title: 'Парикмахерское кресло «Норм» гидравлическое', price: '9 900 ₽' },
+      ])
+  include components/footer/footer.pug
